@@ -1,0 +1,13 @@
+{
+    "mappings": {
+      "properties": {
+        "mes": { "type": "integer" },
+        "nom_mes": { "type": "keyword" },
+        "any": { "type": "integer" },
+        "regio_policial": { "type": "keyword" },
+        "area_transit": { "type": "keyword" },
+        "nombre_atestats": { "type": "integer" }
+      }
+    }
+  }
+  
