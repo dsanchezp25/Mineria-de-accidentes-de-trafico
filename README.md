@@ -12,23 +12,23 @@ A partir de un conjunto de datos públicos descargado del portal [datos.gob.es](
 ```
 /accidentes-trafico-analisis
 │
-├── data/
-│   ├── accidentes_trafico_original.json
-│   ├── accidentes_trafico_procesado.json
+├── data/                                       
+│   ├── accidentes_trafico_original.json       # Dataset original 
+│   ├── accidentes_trafico_procesado.json      # Dataset listo para ser indexado   
 │
 ├── elasticsearch/
-│   ├── mapping_accidentes.json
-│   ├── load_data.py
+│   ├── mapping_accidentes.json                # Definición del mapping del índice
+│   ├── load_data.py                           # Script para cargar datos en ElasticSearch
 │
 ├── kibana/
-│   ├── dashboard_ndjson/
-│   ├── instrucciones_visualizacion.md
+│   ├── dashboard_ndjson/                      # Visualizaciones exportadas en formato ndjson
+│   ├── instrucciones_visualizacion.md         # Guía para importar visualizaciones
 │
 ├── scripts/
-│   ├── transformar_dataset.py
+│   ├── transformar_dataset.py                 # Limpieza y transformación del dataset original
 │
 ├── README.md
-├── requirements.txt
+├── requirements.txt                           # Dependencias necesarias para el entorno Python
 └── LICENSE
 ```
 
@@ -40,13 +40,26 @@ A partir de un conjunto de datos públicos descargado del portal [datos.gob.es](
 - pandas
 - elasticsearch (librería oficial de Python)
 
+## Preparación del entorno
+
+### Linux 🐧
+
+### Windows 🪟
+
+1. Instalar [Java 17/21](https://www.java.com/es/download/).
+2. Descargar [ElasticSearch](https://www.elastic.co/downloads/elasticsearch) y [Kibana](https://www.elastic.co/downloads/elasticsearch)
+3. Descomprimir ambos .zip y editar:
+    - ```config/elasticsearch.yml``` y ```config/kibana.yml``` para desactivar seguridad (igual que en Linux).
+4. Ejecutar:
+    - ```bin\elasticsearch.bat```
+    - ```bin\kibana.bat```
+
 ## 🚀 Cómo usar este proyecto
 
 ### 1. Clona el repositorio
 
 ```bash
-git clone https://github.com/tu_usuario/accidentes-trafico-analisis.git
-cd accidentes-trafico-analisis
+git clone https://github.com/dsanchezp25/Mineria-de-accidentes-de-trafico.git
 ```
 
 ### 2. Instala las dependencias
@@ -57,6 +70,14 @@ pip install -r requirements.txt
 
 ### 3. Ejecuta ElasticSearch y Kibana
 
+En una terminal:
+```bash
+./elasticsearch-8.12.2/bin/elasticsearch
+```
+En otra terminal:
+```bash
+./kibana-8.12.2/bin/kibana
+```
 Asegúrate de tener ambos servicios levantados. Por defecto:
 
 - ElasticSearch en `http://localhost:9200`
