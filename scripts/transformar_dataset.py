@@ -1,7 +1,7 @@
 import json
 
 # Ruta del archivo original
-with open("data/accidentes_tráfico.json", encoding="utf-8") as f:
+with open("../data/accidentes_tráfico.json", encoding="utf-8") as f:
     raw = json.load(f)
 
 # Extraer los datos reales
@@ -22,7 +22,7 @@ for r in rows:
     datos_transformados.append(doc)
 
 # Guardar en archivo JSON como lista de diccionarios
-with open("data/accidentes_trafico_procesado.json", "w", encoding="utf-8") as f:
+with open("../data/accidentes_trafico_procesado.json", "w", encoding="utf-8") as f:
     json.dump(datos_transformados, f, ensure_ascii=False, indent=2)
 
 print("✅ Transformación completada. Datos procesados guardados en data/accidentes_trafico_procesado.json")
