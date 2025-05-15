@@ -149,15 +149,15 @@ python3 elasticsearch/load_data.py
 
 ### 5. Visualiza en Kibana
 
-- Accede a Kibana
-- Crea un index pattern para `accidentes_cataluna`
-- Importa las visualizaciones si lo deseas desde `kibana/dashboard_ndjson`
+- Accede a Kibana.
+- Crea un index pattern para `accidentes_cataluna`.
+- Importa las visualizaciones si lo deseas desde `kibana`.
 
 ## 📈 Dashboards incluidos
 
-- Evolución temporal de accidentes por mes y año
-- Accidentes por región policial y área de tránsito
-- Tendencias estacionales
+- Evolución temporal de accidentes por mes y año.
+- Accidentes por región policial y área de tránsito.
+- Tendencias estacionales.
 
 ## 📄 Licencia
 
