@@ -21,7 +21,7 @@ A partir de un conjunto de datos públicos descargado del portal [datos.gob.es](
 │   ├── load_data.py                           # Script para cargar datos en ElasticSearch
 │
 ├── kibana/
-│   ├── dashboard_ndjson/                      # Visualizaciones exportadas en formato ndjson
+│   ├── dashboard.ndjson                       # Visualizaciones exportadas en formato ndjson
 │   ├── instrucciones_visualizacion.md         # Guía para importar visualizaciones
 │
 ├── scripts/
