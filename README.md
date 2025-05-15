@@ -40,7 +40,7 @@ A partir de un conjunto de datos públicos descargado del portal [datos.gob.es](
 - pandas
 - elasticsearch (librería oficial de Python)
 
-## Preparación del entorno
+## 🏗️ Preparación del entorno
 
 ### Linux 🐧
 Esta instalación se ha llevado a cabo en Arch Linux, lo único que cambia respecto a otras distribuciones es el comando de actualización de los paquetes del sistema.
